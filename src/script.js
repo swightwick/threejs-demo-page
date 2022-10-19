@@ -60,7 +60,8 @@ const mesh1 = new THREE.Mesh(
 const mesh2 = new THREE.Mesh(
     new THREE.PlaneGeometry(2, 2),
     new THREE.MeshLambertMaterial({
-      map: loader.load('https://s3.amazonaws.com/duhaime/blog/tsne-webgl/assets/cat.jpg')
+      map: loader.load('https://s3.amazonaws.com/duhaime/blog/tsne-webgl/assets/cat.jpg'),
+      side: THREE.DoubleSide
     })
 )
 const mesh3 = new THREE.Mesh(
